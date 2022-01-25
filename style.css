@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: white;
+}
+h1{
+    text-align: center;
+}
+
+.flex{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#search{
+    height: 100%;
+    background: white;
+    color: #000;
+}
+
+.meals{
+    margin-top: 5%;
+ text-align: center;
+ display: grid;
+ grid-template-columns:1fr 1fr;
+}
+.mealItem{
+    border: 1px solid wheat;
+    margin: 2%;
+}
+img{
+    height: 200px;
+}
+
+@media screen and (max-width: 800px) {
+    .meals{
+        display: inline-block;
+    }
+  }
