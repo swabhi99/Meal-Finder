@@ -1,48 +1,31 @@
-const search= document.getElementById("search"),
-submit = document.getElementById("submit"),
-random = document.getElementById("random"),
-mealEl=document.getElementById("meals"),
-resultHeading=document.getElementById("result-heading"),
-single_mealEl=document.getElementById("single-meal");
 
 
-//SearchMealAndFetch
-function searchMeal(e){
-e.preventDefault();
-//clear singlemeal
-single_mealEl.innerHTML="";
+const form = document.querySelector('.form')
+const input = document.querySelector('.input')
+const mealContainer = document.querySelector('.meal')
 
-const term = search.value;
-if(term===""){
- alert("Search Something")
-}else{
-     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${term}`)
-      .then(res=>res.json())
-      .then(data=>{
-          console.log(data);
-          resultHeading.innerHTML=`<h2>Search Results for ${term}</h2>`
-
-          if(data.meals===null){
-            resultHeading.innerHTML=`<h1>Please Try Again</h1>`
-            mealEl.innerHTML=" ";
-          }else{
-              mealEl.innerHTML=data.meals.map(meals=>
-                `<div class="mealItem">
-                 <img src="${meals.strMealThumb}"/>
-                 <div class="mealName">
-                    ${meals.strMeal}
-                               
-                 </div>
-                 <div class="inst">
-                 <h2>Instructions</h2>
-                  ${meals.strInstructions}
-                 </div>
-                </div>`
-                ).join('')
-          }
-      })
-      search.value="";
-    }
+const searchMeal = async (e)=>{
+  e.preventDefault()
+  const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input.value}`)
+  const data = await response.json();
+  console.log(data.meals)
+  mealContainer.innerHTML=data.meals.map(meal=>
+    `<div class="card shadow-xl bg-base-100 row-auto">
+    <figure class="w-25 h-50"><img src=${meal.strMealThumb} alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">${meal.strMeal}</h2>
+      <p>${meal.strInstructions}</p>
+      
+    </div>
+  </div>`
+  ).join('');
 }
-// Event listerner
-submit.addEventListener('submit',searchMeal)
+
+form.addEventListener('submit',searchMeal)
+
+module.exports = {
+  //...
+  daisyui: {
+    themes: false,
+  }
+}
