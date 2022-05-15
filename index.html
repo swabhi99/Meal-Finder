@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meal-Finder</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAilBMVEUAAAD///8lJSXIyMjq6urv7+/p6enl5eXh4eHz8/PY2Nj6+vrExMTc3Ny0tLT8/PyAgIC7u7tdXV1TU1NDQ0PT09Ofn586Ojpubm6Tk5OmpqZra2uJiYlNTU2qqqoYGBgxMTFjY2M+Pj6NjY1tbW0MDAwmJiYWFhZ4eHhPT0+ampo0NDQeHh6CgoJz/WRIAAASRklEQVR4nO1daVviPBcuZQcBQVDcsOigyOD//3svW+HkbDlJW5znut7709gJbXo3OXuSpPZ/QPQ2yyzZ/6P7NPnKflrw/+rLbXo7+51+/RraL8kO6Z6TenLE/eV/f45Xbp2fNMebp/p1e3lNtJ6PL73npJPkuMn/e5xfGYLfHEhMtjfM7cpCt9lqt9udTrvdajS7FT6IwWP+zntO7s6cvOf/P8mvbC+/mXM8lYTmbLGZT7NtArFKH+7W98NZo1/+A2kPHs7P3XHSAN3In3650sx/1Lv0dVRiX0aN8cfrZ6Liazofdsp8KMUAPG7HyRj82Tk1uVxp57/aXK4NyupJZ7F0h4ZGzOR+VhkvPfikHSfgZc8MXK6cldHt5VopcrZ/MzfzccZyWMk8GjgP2XHyAv7MGaiak9FwkkTiuXwZ311pnDROreiV2ro8TnqA3xisewU7gDB1b7/j5Af8mUtUeqU8ThZZMUb2eChT9z2imyNOcpOA4WR+uVaAk2bBIXLBS1nmywDfeccJ7CXVxecnl8FJAwy24lg3/E804JXhBPZT4eS5MCfNUhnZY14CKzfkrjtO/oA/84YVcNLH07YUPBY2Wf5ynECtSDk52wPLYpyMXX1XGrbjYpTU6S13nHxTTkZlc9KKNkf8uCs0gab0hjtO3sGfp4b9y5Xz2ARvFczJfWWEHLCIp6TD3G7HSQb+PLXskitFOGkw36JcfEcPFc402HECvY5Tyya5UoCTp6qYgIi14bh77TiBwu/UskGuRHMyqlCSQMyjKGEk7IET+OepaYtcgZGnEE46Fakbim3b3xsC1qrmOWmTK5GcDKt5fx4R84e9D89Jh1yJ4wS63FfARyglnNaROBmQKzGcXEuUXLAM5GTB3iVN+vDPU1sQez3/HrhKNk661GquHNMwZ/kPe5M0AbbImYEZuRLOSeOtovdWsQ2yVPh7pAkM278RTr7OvweGl4UTfqpeAQHqp8HfIU2Ajjlnc2bkSg26AAZOZkkU0uz9bvK8nj8v794/w0PYB9izCjRMcOxEAj9oemp8MWUunFxyQgZOnNyABavJx1O9jaRBt12/v33w/xjBnOUWohdpAkNvGeEkPd8ASEwvJyScp2M9Vgd8Z8HLQhHWEPYz//M0gZ+UcvJ5vkF2aebjBE5HHx6eTAJg9hgykzr+G6JXgkgTOPMfCCcZdwMPJ4LoYrDaBKiJQYAF2PLfriapHcRJnkO/CJ+/5xuAnK7OSffL2PFJcBxmTOLJAlYWO0X6dmkCXcMp4SQfObVRauUExqgUrGN8ttrAGOd+99+Kd4oPnECF9Eo4Od97BOazyonNoF/bRjeD1tx/9x0m/juNhZ+mCfyfb8JJPnJqIzAjNE5Mk/67UGXCwET7j/c+UkQ0TaA7f0c4yUdOrQ8CIQonluDAqmCo3ZgE8IYOpJRkmsDQYD7gOE5AM5kTi0W/LqFcom8RKz4zRTBPdpzAEUQ5yUeOkRPD9yupSFCwyx14yJemYJrAkhzKyVmemDiRmAdP8PSz2avfjMfjm/qs7cnwdf162SNnJQWZJtDozy20S6zlHCuAs0LihA/RQDzKPRwMb+9Q62x+X1c49ItzXaSkwq/S5AP+edKQIC6QVwXBCSxw4jfpJTIbC1mVPLyIw9I/fzQzeST9KE0cto/iw1FSR5qcISB00ufBrngrrfnkdX3nQr1Wyye/NNNN4eTH+fvhZlBHUuFn1ht/O1d4TnwJ0HfW3q4bg7YvrF/X9VSRwtJwjL70mzSJKAphOWl5fvTK/WgR4O3ecXGRvs+TkO1lhRO/riBgOcECEr8R85NhYCTtlWFl9K3/hnvuEV3pJ2kSkXDgOJGch/x16C8GVicXYN6k9/F8DLF0VAxppImHZ+NjRnqU/p0aG5FlS0/02Tq3n/QHR4iTPU0iCiEYf0V/w4xYGZ3o5M+USIiRrrckMauMk4jOUVOoqf+AaBy/dRfyeE8US4gvKePEp80snarpyotEBgJjzhhrfD/dWhTSyMo4ieCEzB29T7h5Nwt/pAuSAtUtWkYw15SxnSbh+RMqY9XQ1wtqXEqGEJvEqu/Dh5cUXRyhEbGZoAbqp6hxYO5HAp6PqqpgJYrCSYTNhs1stYYe9ScyaUqBPoz4hnuw7rhix0bUzbQCuoPmWUmjZA8URlNFCheLUTiJsJ3Qp9ecv2e3aUiG0As0XDWhxgVSFL84vOQMW4aaw+7Sp46ocLiWYF/pBxczUDgJn+DIrZJSR3ug7xOh4zSgN9W+LpM8UTjxmKAMNu69l3JLpHNs2aoAuMvkNd2DWh4gWb+oxs8E1y0WRVWCxWAFBdWuOagNeYaTTGiK1jSZ4MoIZcS6tc3BdToWuAFXZcgyvrw0rHachApZFApRwheusSmFyQvBlW2KWkMKcA85v+PzaQlcuamoEneY/MgNi8Bdp6IYoJQTaVS5eziY4GpAZZQ5w6REY81F1/gUGhyUvPM9J5Y04wXIoZKn8NJpF+FW2eAGDuTvSzWPnEOvyQKYhSthFa3jfBhPuLYIHNND/r5vNQzJgj9wEtJhFMmTDbat0y6y1tUCdzzKxizJuEnBvgMnAQMbe/6yt+SQV+maFWegfIjNiM8j1ynt/9fumuEAsRz1dyyHSvRwDkfNyhErshJMmmdHTszfEUeTZHHy1/L0kuDQL8ZSSVJDMntPnBhXuxJjULZNHacoIocUAicILc9mHG2TAvc5J6aRQlOTck5iYHh4abB9JvJFhXZnTvxBwZQJf4ue7gq22kityoKj9sVWyJ83cOKr+2EXq4pZfceysxZWR8Ox20T7fol7L0h+yEmtuxEF1JwtIpSdHejEX2F5E+yUOJ//ot5LJkiKfKPG+BYnS1frhVQ9JQsKaCBVvFvBHlDSyT4PzloLDg/mpEZDP9QoPkPUsY44CfQxY+AkK8RW2JIVHB6GE6LMZE7EyNnS1Mfy4JjXopDDSVpxnRd5USJqZU7EmAj8bqVluTSYeoX3BBHsD4YTMqJkTsQaJ+hbXGVfi5nlgTgdKDiwDCfE5pA5EQPlUEuVvrMUBzgERF/9D+q+YN4xnBD9LnMiqm7ogVS+I8we0B4SFQ+u9xNMCYYTMiFESuTMG9R6Ma8YDPi6YoAZBzrEdejkTYnqFEveRZMNxpO0/E95cJS/1Ih4xvw3ZTghTixf5qN9EGgxXmmRPuyXVIO5wl+XN2QZTkhDsRRZNGPhSL6KKnYlmGig4GgBL/4ZTohMFFcwi5zAyJeWYi8RUNOJJgIe8bzXy3BCkv/igkYxZAnzBhVG7CGgSyaWVWJOeEuG4STDbcQ9EUSlB8v6foET0SLCnPD+GuVkRKIKIidiSAsGA6/ECQyiifV1eIkTL+soJ30SARLXWf1L4wRyIo4TzAkvECkn1OgQORHVLLQqf2HuiBFRYlWwrSyciKs9RL0DY4G/wIkYffxNTn5ZF4tBLMJJxrWinFDjVFxK/y/ZbDCGJpYSknpqtirCwom4Sle07R9AI/sOMYUAq4LFhD3hhA0/WThhllYdYfIBr+MXJ5Ynbkk5NRt93BJOqHEqrkcdiR8EPvwqO4Nm4IHip3rAL1BbJG/YYXz7yggn1OiQF9SLa8Sg23iFsL2bkRPNJmah5ojM7Z0NQzihMlHeblMMoUEXqbSTDzSYguLsng5YVnCcUN0p7zgjGgJQLF9lD1loL4g5NvZFLOOE+kVcXfYRYl0D/GyVVTxCQMtDHJisssCctBhOqN1JliSeIaZmnWhw/JvaAZ9nznmZOaFDXd7+Wq4/gq2usLWu89nEVmwdAOakzXBCvz1Oi8j3c+58xhWSXnAEyEU57LLAsjmRkxmwk6Uu7uIB31ac0PwqfQsn9KsuRU5kZezI5YglzGFwxJdY2c1vrxTHibxdhrJKCbaqvHbL8cjEVnihM89Jh+GE6ld2N5cj5Bo/GOyv3A2EeRtZnPD+vYUTGt9XNiX6N2pBHcUoF1LzG05ZOKEWT8bd6gg58ZnCZhXHlZxki7gRy6rGwsIJDfCm3K1OkCv1nUxZpVLWmdvyyF3Gc0J9GIHgA+SR6njTlfo8Tgxd9jiFMBDmZMBwwlidCifKrHDaVbgIwa2gkNsJ6UwLJ0y4Q+FEXLiMxHyF0XsnJacMSOENLJwwEkLhRHFmXLOmsmqlpfMYebs2yWuzcMJ0XuNE2RnJkbKVrC7ew9GwSpJAyj7g5APHCcO0xomyEnfpNKzoLB63vlNxwaWtVy2cMMkRdc9XZd2cW7iSRbyxF9/OI5Rh4n6gQE6YrqubxSvV9G4/Kom3uZk9JRwuJqkMnNBSC8+pAtoydrdKo4K1CK6Q0MxlcddizEmPctJnbGP9+AllDiNPSdliIQ4o6JzJLeVYoYGTLhMm0nej10wPd8SOSjbxUb2rNg7l82cwJzOGk6AbHqB12xVF4fvPaPh054MWkfiqicBRQIYTrtseTmSfh4j7Motlv5Do1/KNynbDkZx4tqRXvz4ylUokBRWTqNtqKtYE5qROOeFGoFiUc4K67R3qemkaGSlDNZYnZ+1MnHB1Nj5OVLsdJ/PLieJvccmRuuWrdqxNJCfeMz/U0gGcpW2WoH0ebFXiJ8jJGIaTG8oJN+G9nOgTApuQ/cL7w5CshB6zUm1OAyecy+A/8FW3xkhOsuDeSiQpoTvdcr6b42RMOeHsY/954x51QuoNC4WYiHjz7Iegn6Nm4IRLiyvaPYdeeJMSL7Idvc3hHSHYcxiCcm7JHvhzMpxwX9Bz10O/9Bf5Sw2EyOQgjTT3dXrfPGfWYE6GlBNOWlnOSvYUD0xpz1oRNRjPzDzwRDV9wtDACWcO+o8Lq3kMhB0pjCl5kwXQscM752R4KCHrIiM44b63Zgae4Qu4MtNnN1MzOyN/OdNx5DtDxHsKoYETzuHWlVkOn4Ll9pTZ6X7jftjPrNPl3RbeLwqxbbWwcSIHZBx4D7bmY1PdjTfP8brgnTivRykelnEBHt8MJ5w6YPbU5OBfbSA5Tt2hcjLC80KKB/u38zIcUIt7zXDCBUOWNk4MR6UoQ7k1/lhmbuvPyctQeSv/4wyGlYUTTiosDbc+wH/8qucsvFG/1auPh8PxTX3Q1w2Lpt9r+lZvcALm5IlywjmYhvNMT/30djNZlXRmosU7sBzYS5wZhhNODSjFW54HcLgt4WzNrkVb2c5Fx12+p5xwxqXX7rnAcoLAV+EzWE3H94jLjlxgQc1wwoWH6LoXGSaD/c54YDmPmalGwWhAWDjhnmfQ8hfYHN61uFmGDx2bm2Se71gwbSgnnOrYsjcTwCXNONwGHA9/QdvoOKZmoWXghHPlVh53G3Xb1uudOrMJQYC6ec2YnXAcCGA4ybgnBHESsHr27T5gCjU39pWFAWeLGzhhY1ZhnAQtKX5dmE6L7zyF1B2HDECswx4pJ+xS0EBOAmuE058bPbI+XIftLBpkFvo5GbFPD7aygjdbTp8343YDPaffGIw3d8FbnoeZPzhgRDnhV+SEW55x1eRff6eT2xOW0yxuZbIvaxnMCR9rNjkOLq60TQFFqD+FA0aUE96LizElrrQHGUawfvdzwqfnvUFNDo1KN7XnsQp3GnAQ7YNwwqfUAtQ9QP8qOz1C8MeLF+WEN0KDB+QJV9kS9AJznOc3ObnGVtQXGNKVDHB0g3LCS8b42NiVdg4q0Elc80454TNXgSofonuVrT52oiQ2+IAD0C+EE96sKBQYq3wl7elNIoFl3g/hhDfKiwULe5Ur5W20wKNLpG8JJ3w43F+opKOiM99yrEN9VAgc7aac8IVhRTmpzbLqGMkKDJIaDSCvCSd8RNxfvOVFZVrZkuvTgHUA5YQvrSn63D2aEQdq+/EnOtadA6cT54QT/nOSk2uiMChdLU8K5USOwEF5ygmvOC3FWxbMSj05ccruexMKHJR/NnJSzjjZo1faDHqOc0wJskhOCusdgKa2tMWMl8JyJAc2npZGGVvCtIUYFxQsd4UTzgA43Lu0+TtBuVETGvf+UhUB0/uoBKIIXHE2obkMrijNmKEPQ+spYrRMH6NCfhpwooLaJ5wyDkoXh6Bb/wgIxX3Oh6UJEQAsT5ianFpGOlPMdvagO7ufeDM42+nH2JQujAD2i7n9HklUqUylI6DRGz7Op58kn7PaZsvNcFCuAEFAEnRvdtANGlARbYF4UihGzVZn0JvVb/boddrNIv6uGY60OFTyMJtWdMEKpWVEJPy/BhAfOc4JdiOPxv3rNt2mk0UVQu0fxM16J9LSdT4l/gf2SegkyGmB6QAAAABJRU5ErkJggg==">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.15.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Meal Finder</h1>
-        <div class="flex">
-            
-            <form class="form" id="submit">
-             <input type="text" id="search" placeholder="search for meal">
-             <button class="search-btn">Search</button>
-            </form>
-            <button class="random btn" id="random">
-                <i class="fas fa-random"></i>
-            </button>
-        </div>
-
-        <div class="result-heading" id="result-heading"></div>
-        <div id="meals" class="meals"></div>
-        <div id="single-meal"></div>
-    </div>
-
+  
+      <div class="flex flex-row justify-center">
+        <form class="flex flex-row gap-2 mt-12 form">
+            <input type="text" class="input w-full max-w-xs bg-slate-800" placeholder="search meal">
+            <button class="btn btn-primary rounded-r-lg search">GO</button>
+        </form>
+      </div>
+      
+      <div class="flex justify-center">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mt-12 gap-4 meal w-3/4"><div></div>
+      </div>
+      
     <script src="script.js"></script>
 </body>
 </html>
